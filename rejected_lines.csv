@@ -1,0 +1,5 @@
+order_id,line_no,source_row_id,customer_id,order_date_raw,quantity_raw,unit_price_raw,discount_raw,status_raw,rejection_reasons
+O102,1,4,C03,2026-10-03,,40,,Completed,missing or bad quantity
+O103,1,5,C04,2026-02-30,3,20,0,Completed,bad date
+O105,1,7,C01,2026-10-05,0,15,0,Completed,quantity not positive
+O106,1,8,,2026-10-06,2,bad,0,Completed,missing or bad price

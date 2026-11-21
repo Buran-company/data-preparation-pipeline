@@ -1,0 +1,14 @@
+column,type,description,missing values
+order_id,STRING,Order ID (part of the business key),never missing
+line_no,INT64,Line number within the order (part of the business key),never missing
+customer_key,STRING,Customer ID after TRIM and UPPER,NULL if blank in the source
+order_date,DATE,Order date,never missing (lines without a valid date are rejected)
+quantity,INT64,Quantity (greater than 0),never missing
+unit_price,NUMERIC,Price per unit (0 or more),never missing
+discount,NUMERIC,Discount from 0 to 1,missing discount is set to 0
+status,STRING,Standardized status (always Completed),never missing
+revenue,NUMERIC,quantity * unit_price * (1 - discount),never missing
+region,STRING,Customer region,Unknown if the customer is not found or has no region
+customer_matched,BOOL,TRUE if the customer was found in the customer table,never missing
+order_source_row_id,INT64,source_row_id of the kept order version,never missing
+customer_source_row_id,INT64,source_row_id of the kept customer version,NULL if the customer is not found

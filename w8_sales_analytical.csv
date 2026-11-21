@@ -1,0 +1,6 @@
+order_id,line_no,customer_key,order_date,quantity,unit_price,discount,status,revenue,region,customer_matched,order_source_row_id,customer_source_row_id
+O100,1,C01,2026-10-01,2,25,0,Completed,50,North,true,2,101
+O100,2,C01,2026-10-01,1,10,0,Completed,10,North,true,12,101
+O101,1,C02,2026-10-02,1,100,0.2,Completed,80,South,true,11,103
+O104,1,C99,2026-10-05,1,80,0,Completed,80,Unknown,false,6,
+O107,1,C02,2026-10-07,1,2000,0,Completed,2000,South,true,9,103
